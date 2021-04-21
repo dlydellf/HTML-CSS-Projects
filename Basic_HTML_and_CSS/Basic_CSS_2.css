@@ -1,0 +1,14 @@
+/* from Steps 181 & 195*/
+
+p {
+	color: lightblue;
+	background-color: darkblue;
+	font-size: medium;
+	text-align: center;
+	}
+div {
+	color: tan;
+	text-align: center;
+	font-size: 600%;
+	text-shadow: 2px 2px 3px blue;
+}
