@@ -10,5 +10,9 @@ div {
 	color: tan;
 	text-align: center;
 	font-size: 600%;
-	text-shadow: 2px 2px 3px blue;
+	text-shadow: 2px 4px 2px black;
+}
+a {
+	color: white;
+	text-decoration: none;
 }
