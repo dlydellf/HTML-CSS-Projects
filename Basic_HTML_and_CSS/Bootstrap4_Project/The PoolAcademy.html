@@ -15,26 +15,31 @@
     <title>The Pool Academy</title>
   </head>
   <body class="bg-dark">
-    <div class="container">
-      <img src="./Bootstrap4_Images/PossibleHeader1.jpg" class="img-fluid" alt="..." />
+    <div id="home" class="container">
+      <img
+        src="./Bootstrap4_Images/PossibleHeader1.jpg"
+        class="img-fluid"
+        alt="Two cue sticks and five pool balls atop a custom pool table"
+      />
       <!--  ADD AN <alt> property ABOVE  -->
 
-      <!-------------  NAV BAR --------------->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <!-----------------------------  NAV BAR  ------------------------------->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-warning">
+        <!-- or bg-dark?? -->
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#about">About</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" href="#about">About</a>
               <a class="nav-link active" href="#classes">Classes</a>
-              <a class="nav-link active" href="#">Locations</a>
-              <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link active" href="#locations">Locations</a>
             </div>
           </div>
         </div>
       </nav>
     </div>
 
-    <!-- ------------ JUMBOTRON -------------->
+    <!--====================  "About" Section (Jumbotron)  ==================-->
     <div id="about"></div>
     <br /><br />
     <div class="jumbotron jumbotron-fluid bg-warning">
@@ -44,13 +49,19 @@
       </div>
     </div>
 
-    <!--------------- 1st ROW of CONTENT ---------------->
+    <!----------------------"About" Section (ROW of Content)------------------->
     <br /><br /><br />
     <div class="container">
       <div class="row">
+        <!----------------------Left Column / the Image------------------------>
         <div class="col-sm">
-          <img class="img-fluid" src="./Bootstrap4_Images/initial.jpg" alt="" />
+          <img
+            class="img-fluid"
+            src="./Bootstrap4_Images/initial.jpg"
+            alt="An incorrectly racked set of pool balls, as seen from opposite the breaker's perspective"
+          />
         </div>
+        <!-------------------Right Column / the "Offerings" List--------------->
         <div class="col-sm">
           <ul class="list-group">
             <li class="list-group-item bg-dark text-warning">We Offer:</li>
@@ -63,75 +74,177 @@
             </li>
             <li class="list-group-item bg-dark text-warning">
               Discrete & immersive personal tutoring sessions in quiet, comfortable settings... not at your local bar or
-              at a crowded pool hall.
+              in a crowded pool hall.
             </li>
-            <li class="list-group-item bg-dark bg-dark text-warning">
-              Unbiased testimonials from our currrent & previous clients
+            <li class="list-group-item bg-dark text-warning">
+              Unbiased testimonials from both currrent & previous clients
             </li>
           </ul>
         </div>
+        <!------------------------Right Column ENDS---------------------------->
       </div>
-      <br id="classes" /><br /><hr class="text-warning" />
+      <br id="classes" /><br />
+      <hr class="text-warning" />
     </div>
-    <div><br /></div>
-    <!----------------- 2nd ROW of CONTENT ----------------->
+    <!--=====================  "About" Section ENDS  ========================-->
+    <br />
+    <!--=======================  "Classes" Section  =========================-->
     <div class="container text-warning">
       <h1 class="text-center">Our Classes</h1>
-      <br>
+
+      <!---------------------------Row of Images------------------------------->
+      <div class="container">
+        <div class="row justify-content-evenly align-items-end">
+          <!--left col-->
+          <div class="col">
+            <img
+              class="image-fluid"
+              src="./Bootstrap4_Images/Beginner.jpg"
+              alt="Correct positioning of a bridge during a snooker game"
+            />
+          </div>
+          <!--middle col-->
+          <div class="col">
+            <img
+              class="image-fluid"
+              src="./Bootstrap4_Images/Intermediate.jpg"
+              alt="An awkward pool shot requires removing one foot from the ground; intense focus is seen before the shot is attempted"
+            />
+          </div>
+          <!--right col-->
+          <div class="col">
+            <img
+              class="image-fluid"
+              src="./Bootstrap4_Images/Advanced.jpg"
+              alt="Pool player ponders his next shot... one involves pool balls, one involves a tumbler"
+            />
+          </div>
+        </div>
+      </div>
+      <!------------------------Row of Images ENDS----------------------------->
+      <br />
+      <!--------------------------Row of Text---------------------------------->
       <div class="container">
         <div class="row justify-content-evenly">
-         <!-- the pics -->
-          <div class="col">
-            <img class="image-fluid" src="./Bootstrap4_Images/Beginner.jpg" alt="" />
+          <!--left col-->
+          <div class="col text-success">
+            <h3 class="text-start">Beginner</h3>
+            <p>
+              <u>Introduction to The Fundamentals</u>:<br />
+              Proper stance, your bridge hand, aiming, follow-through, correct speed usage, the break, and <br />the
+              importance of shot selection & post-shot positioning.
+            </p>
           </div>
-          <div class="col">
-            <img class="image-fluid" src="./Bootstrap4_Images/Intermediate.jpg" alt="" />
+          <!--middle col-->
+          <div class="col text-white">
+            <h3 class="text-start">Intermediate</h3>
+            <p>
+              <u>Instruction in these nuances</u>:<br />
+              Defensive play, banking, cheating the pocket, combination shots, carmon shots, kick shots, English, and
+              spin.
+            </p>
           </div>
-          <div class="col">
-            <img class="image-fluid" src="./Bootstrap4_Images/Advanced.jpg" alt="" />
+          <!--right col-->
+          <div class="col text-danger">
+            <h3 class="text-start">Advanced</h3>
+            <p>
+              <u>Guidance with perfecting your execution of</u>:<br /><em>ALL</em> topics covered in the Beginner &
+              Intermediate classes, plus unlimited match play with the instructor(s) of your choice.
+            </p>
           </div>
         </div>
-      </div>  
-        <br /><br /><br />
-        <div class="col">
-          <h3 class="text-center">Beginner</h3>
-          <p>
-            Introduction to the basics of proper stance, your bridge, the stroke, correct speed usage, aiming,
-            follow-through, the break, and the importance of shot selection & post-shot positioning.
-          </p>
-        </div>
-        <div class="col">
-          <h3 class="text-center">Intermediate</h3>
-          <p>
-            Instruction in the nuances of defensive play, banking, carmon shots, combination shots, cheating the pocket,
-            kicking, spin, and English.
-          </p>
-        </div>
-        <div class="col">
-          <h3 class="text-center">Advanced</h3>
-          <p>
-            Comprehensive guidance to help hone your understanding & execution of <em>ALL</em> topics covered in the
-            Beginner & Intermediate classes, plus unlimited match play with the instructor of your choice.
-          </p>
-        </div>
+        <br id="locations" /><br />
+        <hr class="text-warning" />
       </div>
+      <!-------------------------Row of Text ENDS------------------------------>
     </div>
-    <!--
-    <div class="row align-items-center">
-      <div class="col border border-danger">
-        <div class="col border border-primary align-self-start">Content 2 - Use this area to expand upon the techniques mentioned above</div>
-        <img src="./Bootstrap4_Images/PrivateSetting.png" alt="" />
-      </div>
-    </div>
+    <!--=====================  "Classes" Section ENDS  ======================-->
 
-    ------------- 3rd ROW of CONTENT ---------------
-    <div class="row align-items-center">
-      <div class="col border border-info">
-        <img src="./Bootstrap4_Images/TraditionalSettingRSZ.jpg" alt="" />
+    <!--=======================  "Location" Section =========================-->
+    <div class="container text-warning text-center">
+      <h1>Our Locations</h1>
+      <br />
+      <!----------------------------Portland Row------------------------------->
+      <div class="row justify-content-start">
+        <!--left col-->
+        <div class="col">
+          <img
+            class="image-fluid"
+            src="./Bootstrap4_Images/PrivateSetting.png"
+            alt="Matching the grey color scheme of the room it's in, a modern, gray-colored pool table awaits its next match."
+          />
+        </div>
+        <!--right col-->
+        <div class="col align-self-center text-secondary">
+          <p class="lead">
+            15 NW 4th Ave<br />
+            Portland, OR 97209
+          </p>
+          <hr class="text-warning" />
+          <p class="text-white">
+            In the heart of Portland's downtown sits... The Hoxton.<br />
+            <br />
+            Your classes include:<br />
+            Private-entry access, courtesy meals from both the upscale restaurant & rooftop cafe, and validated parking.
+          </p>
+          <hr class="text-warning" />
+          <p class="text-warning">
+            The hotels' staff have preauthorized these perks exclusively for students of The Pool Academy.
+          </p>
+        </div>
       </div>
-      <div class="col border border-primary">content 3 - this spot reserved for advanced students and </div>
+      <!-------------------------Portland Row ENDS----------------------------->
+      <br />
+      <br />
+      <hr class="text=warning" />
+      <br />
+      <br />
+      <!------------------------------SLC Row---------------------------------->
+      <div class="row justify-content-end">
+        <!--left col-->
+        <div class="col align-self-center text-warning">
+          <p class="lead">
+            165 E 200 S<br />
+            Salt Lake City, UT 84111
+          </p>
+          <hr class="text-warning" />
+          <p class="text-white">
+            The former home of "Johnny's on Second" now offers personal tutoring sessions!<br />
+            <br />
+
+            Your classes include: Personal attention from our personable instructors, in a newly-remodeled space that's
+            been redesigned for group gatherings.
+          </p>
+          <hr class="text-danger" />
+          <p class="text-danger">
+            The Pool Academy staff hosts weekly "Pool Parties" at this location - all former & current students are
+            welcome!
+          </p>
+        </div>
+        <!--right col-->
+        <div class="col">
+          <img
+            src="./Bootstrap4_Images/TraditionalSetting.jpg"
+            alt="Four red-felted pool tables, arranged lengthwise in a tiled room with wooden furnishings throughout"
+          />
+        </div>
+      </div>
+      <!----------------------------SLC Row ENDS------------------------------->
     </div>
-  -->
+    <!--====================  "Location" Section ENDS  ======================-->
+
+    <br />
+    <hr class="text-warning" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--============================== Footer ===============================-->
+    <div class="card-footer text-warning">
+      <a class="text-warning" href="#home">www.ThePoolAcademy.arpa</a> &nbsp;|&nbsp; &copy; 2021
+    </div>
+    <!--============================ Footer ENDS ============================-->
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
