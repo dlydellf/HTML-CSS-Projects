@@ -61,3 +61,14 @@ a {
 q {
   font-style: italic; /* Italicizes the quote */
 }
+
+/* Image elements */
+img {
+  filter: grayscale(75%); /* Rids pictures of 75% of their color */
+  border-radius: 8px; /* Gives all images slightly rounded corners */
+  max-width: 100%; /* Ensures all images stay within the width of their container */
+  height: 340px; /* Sets the height of all images */
+  display: block; /* Specifying "BLOCK" display to ensure images can be centered */
+  margin-left: auto; /* IN combination with "margin-right", this centers all images */
+  margin-right: auto;
+}
