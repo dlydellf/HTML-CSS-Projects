@@ -149,3 +149,14 @@ footer {
     font-size: 12px;
   }
 }
+
+/* Navbar hover effects */
+.Navbar a:hover {
+  background-color: #f4f4f4; /* Defines the background color that displays when Navbar links are hovered over */
+  font-weight: bold; /* Bolds the Navbar text when hovered over */
+}
+/* Navbar Home button */
+.Navbar a.active {
+  background-color: darkgrey;
+}
+/******  END OF NAVBAR STYLING  ********/
