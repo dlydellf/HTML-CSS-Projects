@@ -79,3 +79,13 @@ img:hover {
   transition: transform 1s; /* Transform effect lasts 1 second */
   transform: scale(1.1); /* <img> elements increase in size by x1.1 when hovered over */
 }
+
+/* The @media rule is used in media queries to apply different styles for different media/ypes of devices */
+/* On screens 576px & smaller, the images will be 100px tall and centered vertically in the column */
+@media screen and (max-width: 576px) {
+  img {
+    height: 100px;
+    margin-top: 150px;
+  }
+}
+
