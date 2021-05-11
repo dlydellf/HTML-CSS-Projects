@@ -160,3 +160,19 @@ footer {
   background-color: darkgrey;
 }
 /******  END OF NAVBAR STYLING  ********/
+
+/***** VIDEO STYLING  ****************/
+/* Formatting for background video */
+#codingVideo2.mp4 {
+  position: fixed; /* Fixes the video to the page */
+  right: 0; /* Ensures no space between the edge of the video & the edge of the page */
+  bottom: 0; /* Ensures no space between the bottom of the video and the bottom of the page */
+  min-width: 100%; /* Ensures the video is displayed across the full widht of the page */
+  z-index: -1; /* Places the video behind the page's other elements */
+}
+/* Screens smaller than 576px will not display the video */
+@media screen and (max-width: 576px) {
+  #codingVideo2.mp4 {
+    display: none;
+  }
+}
