@@ -89,3 +89,9 @@ img:hover {
   }
 }
 
+/* Styling for <footer> */
+footer {
+  padding: 2%; /* <footer>'s padding == 2% of the width of the element's area */
+  background-color: white;
+}
+/******  END OF GENERAL STYLING  *****/
