@@ -141,3 +141,11 @@ footer {
     top: 0vw;
   } /* Lowers the Navbar's text onto the Navbar */
 }
+
+/* Screens 576px & smaller will display Navbar links equally distributed */
+@media screen and (max-width: 576px) {
+  .Navbar a {
+    width: 25%; /* This makes each line take up 1/4 of the Navbar */
+    font-size: 12px;
+  }
+}
