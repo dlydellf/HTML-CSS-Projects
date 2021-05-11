@@ -255,10 +255,25 @@ input[type="text"] {
   margin-top: 6px; /*Adds a margin to the top of the text box */
   margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
   resize: vertical; /* Allows users to resize text boxes vertically */
-  font-family: Perpetua, ROckwell Extra Bold;
+  font-family: Perpetua, Rockwell Extra Bold;
 }
 
 /* Hover effects for input boxes */
 input[type="text"]:hover {
   box-shadow: 0 0 5px #00004d inset; /* Creates a blue sshadow in the text box when hovered over */
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: black; /* Sets the Submit button's background color */
+  color: white; /* Sets the Submit button's font color */
+  font-weight: bold; /* Bolds the Submit button's font */
+  padding: 12px 20px; /* Adds padding to the Submit button */
+  border: none; /* Removes the Submit button's border */
+  border-radius: 6px; /* Gives the Submit button rounded corners like the text boxes */
+  cursor: pointer; /* Changes the cursor to pointer when over the Submit button */
+  display: block; /* Allows the Submit button to be centered */
+  margin-left: auto; /* In combination with "margin-right: auto", centers the Submit button */
+  margin-right: auto;
+  font-family: Perpetua, Rockwell Extra bold;
 }
