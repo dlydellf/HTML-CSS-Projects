@@ -277,3 +277,11 @@ input[type="submit"] {
   margin-right: auto;
   font-family: Perpetua, Rockwell Extra bold;
 }
+
+/* Submit button's hover effect */
+input[type="submit"]:hover {
+  background-color: rgb(131, 137, 143); /* Turns the Submit button's background a greyish-blue when hovered over */
+  color: black; /* Turns the Submit button's text black when hovered over */
+  transform: scale(1.5); /* Makes the Submit button increase x1.5 in size */
+  transition: transform 1.5s; /* Makes the trasnform effect last 1.5 seconds */
+}
