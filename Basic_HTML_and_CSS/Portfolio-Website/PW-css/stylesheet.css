@@ -206,7 +206,6 @@ footer {
 }
 
 .Column_1 {
-  border: 2px solid red;
   float: left;
   width: 50%; /* Ensures the column takes up half of the page width */
   padding: 10px;
@@ -243,4 +242,23 @@ footer {
   display: table; /* Specifies the type of display behavior; the "table" value tells the browser to treat the element as a table */
   clear: both; /* Clears any other elements from floating on the left or the right of an element */
 }
-/*****  END OF TABLE STYLING  *****?
+/*****  END OF TABLE STYLING  *****/
+
+/*****  CONTACT FORM STYLING  *****/
+/*input[type="text"] targets all text input selectors of the contact form */
+input[type="text"] {
+  width: 100%; /* Each input box covers the full width of the container */
+  padding: 12px; /* Adds padding wihtin the text box */
+  border: 1px solid #ccc; /* A solid border */
+  border-radius: 6px; /* Slightly rounds the corners of the text box's border */
+  box-sizing: border-box; /* Creates a box with a border around the contact form's input boxes */
+  margin-top: 6px; /*Adds a margin to the top of the text box */
+  margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
+  resize: vertical; /* Allows users to resize text boxes vertically */
+  font-family: Perpetua, ROckwell Extra Bold;
+}
+
+/* Hover effects for input boxes */
+input[type="text"]:hover {
+  box-shadow: 0 0 5px #00004d inset; /* Creates a blue sshadow in the text box when hovered over */
+}
