@@ -100,12 +100,12 @@ footer {
 .Navbar {
   overflow: hidden; /* Ensures that any content which overflows beyond the boundary of the NAVBAR isn't displayed */
   background-color: black; /* Colors the NAVBAR */
-  position: fixed; /* Keeps the NAVBAR at the top of the screen as user scrolls */
+  position: fixed; /* Keeps the NAVBAR at the top of the screen while user scrolls */
   top: 0; /* Ensures no space is displayed above the NAVBAR */
   width: 100%; /* Makes the NAVBAR span the entire width of page */
   z-index: 1; /* Ensures other elements dont' display over the NAVBAR */
-  -webkit-animation: moveNav 5s; /* Applies the moveNav animation below for Safari 4.0 - 8.0 */
-  animation: moveNav 5s; /* Applies the moveNav amimation for all other browsers */
+  -webkit-animation: moveNav 2s; /* Applies the moveNav animation below for Safari 4.0 - 8.0 */
+  animation: moveNav 2s; /* Applies the moveNav amimation for all other browsers */
 }
 
 /* moveNav animation effect for moving the NAVBAR in from the left of the screen */
@@ -115,5 +115,29 @@ footer {
   } /* The NAVBAR starts off-screen, to the left */
   to {
     left: 0vw;
-  } /* This moves the NAVBAR into place pn the screen */
+  } /* This moves the NAVBAR into place on the screen */
+}
+
+/* Navbar Links */
+.Navbar a {
+  float: left; /* Specifies that the text floats on the left of the navbar */
+  display: block; /* Ensures that the text will be displayed on the same line or row, instead of a new line */
+  color: white; /* Navbar text's font color */
+  padding: 14px 16px; /* Adds padding around the navbnar text */
+  text-decoration: none; /* Gets rids of the underlines under the <a> links */
+  font-family: Avant Garde, Helvetica; /* Specifies the font family for Navbar text */
+  font-size: 20px; /*Specifies font size of Navbar text */
+  text-align: center; /* Centers the text within its container */
+  position: relative; /* Sets the text relative to its normal positioning, allowing use of the animation below */
+  -webkit-animation: moveNavText 2.75s; /* Animation for Safari 4.0 - 8.0 */
+  animation: moveNavText 2.75s; /* Applies the moveNavText animation for 2.75s */
+}
+/* moveNavText animation effect for moving the Navbar text from above the view to the Navbar */
+@keyframes moveNavText {
+  from {
+    top: -100vw;
+  } /* Sets the Navbar text 100% above the viewport */
+  to {
+    top: 0vw;
+  } /* Lowers the Navbar's text onto the Navbar */
 }
