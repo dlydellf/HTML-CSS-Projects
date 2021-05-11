@@ -176,3 +176,25 @@ footer {
     display: none;
   }
 }
+
+/* Texts over the video */
+.Video_Text {
+  background: rgba(0, 0, 0, 0.5); /* Provides a semi-transparent background for the text to sit over */
+  color: white; /* Makes the font color white */
+  width: 100%; /* Ensures the video-text container fills the width of the video */
+  padding: 20px; /* Adds padding around the video-text containerr so that the background goes slightly beyond the text */
+  position: relative; /* Sets the text relative to its normal positioning, allowing use of the animation below */
+  -webkit-animation: moveVideoText 5.75s;
+  animation: moveVideoText 5.75s;
+}
+
+/* This animation effect causes the overlay vidfeo text to move up from the bottom of the page upoin page load */
+@keyframes moveVideoText {
+  from {
+    top: -100vw;
+  } /* Sets the postion of the video text to above the viewport */
+  to {
+    top: 0vw;
+  } /* This moves the video text to the normal positioning on the viewport */
+}
+/******  END OF VIDEO STYLING  *********/
