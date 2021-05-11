@@ -19,3 +19,8 @@ h1:hover {
   transform: scale(1.1); /* When the h1 elements are hvoered over, they increase in size by 1.1 */
   transition: transform 1s; /* This causes the transformation to last 1 second */
 }
+
+/* Styling for portfolio title text */
+.white-text {
+  color: #fff; /* Changes the color of the portfolio title's text */
+}
