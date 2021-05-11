@@ -46,3 +46,8 @@ p:hover {
   text-align: center; /* Centers the text */
 }
 
+/* Center class hover effects - ONLY affects the quote, GitHub link, & footer */
+.center:hover {
+  transition: transform 2s; /* Transform effect lasts 2 seconds */
+  transform: scale(1.1); /* .center elements increase in size by x1.1 when hovered over */
+}
