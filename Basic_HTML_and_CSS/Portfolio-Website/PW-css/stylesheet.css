@@ -12,3 +12,10 @@ h1 {
   margin-top: 3%; /* Adds a small margin above all h1 elements */
   color: #1a1a1a;
 }
+
+/* Heading 1 element hover effect */
+h1:hover {
+  filter: grayscale(5%); /* Adds a slightly grey filter to the h1 elements when hovered over */
+  transform: scale(1.1); /* When the h1 elements are hvoered over, they increase in size by 1.1 */
+  transition: transform 1s; /* This causes the transformation to last 1 second */
+}
