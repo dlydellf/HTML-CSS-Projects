@@ -156,7 +156,7 @@ section {
     HOME SECTION STYLES
     ================================================*/
 #home {
-  background: url(../SSW_Images/Possible3.jpg) no-repeat;
+  background: url(../SSW_Images/homeBackground.jpg) no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
