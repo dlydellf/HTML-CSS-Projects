@@ -159,20 +159,20 @@ footer {
 .Navbar a.active {
   background-color: darkgrey;
 }
-/******  END OF NAVBAR STYLING  ********/
+/******  END OF NAVBAR STYLING  ******/
 
-/***** VIDEO STYLING  ****************/
+/****** VIDEO STYLING ******/
 /* Formatting for background video */
-#codingVideo2.mp4 {
+#codingVideo {
   position: fixed; /* Fixes the video to the page */
   right: 0; /* Ensures no space between the edge of the video & the edge of the page */
   bottom: 0; /* Ensures no space between the bottom of the video and the bottom of the page */
   min-width: 100%; /* Ensures the video is displayed across the full widht of the page */
   z-index: -1; /* Places the video behind the page's other elements */
 }
-/* Screens smaller than 576px will not display the video */
+/* Screens 576px & smaller will not display the video */
 @media screen and (max-width: 576px) {
-  #codingVideo2.mp4 {
+  #codingVideo {
     display: none;
   }
 }
@@ -198,3 +198,26 @@ footer {
   } /* This moves the video text to the normal positioning on the viewport */
 }
 /******  END OF VIDEO STYLING  *********/
+
+/***** TABLE STYLING ******/
+* {
+  /* The asterisk is a universal selector that applies this effect to all elements on the page */
+  box-sizing: border-box;
+}
+
+.Column_1 {
+  border: 2px solid red;
+  float: left;
+  width: 50%; /* Ensures the column takes up half of the page width */
+  padding: 10px;
+  padding-top: 3%; /* Ensures there is space between the top of the column & our headings */
+  height: 700px; /* Sets the column's height */
+  background-color: #f2f2f2; /* Sets the background color of all columns with ".Column_1" */
+}
+
+/* Screens 576px & smaller will display a scroll bar if the text overflows the column height */
+@media screen and (max-width: 576px) {
+  .Column_1 {
+    overflow: auto;
+  }
+}
