@@ -6,7 +6,6 @@ body {
 
 /* <h1> elements */
 h1 {
-  text-transform: uppercase; /* Capitalizes all <h1>s */
   font-family: "Trebuchet MS", Optima; /* Sets the font family of all <h1>s */
   text-align: center; /* Centers all <h1>s */
   margin-top: 3%; /* Adds a small margin above all <h1>s */
@@ -67,7 +66,7 @@ img {
   filter: grayscale(65%); /* Rids pictures of 65% of their color */
   border-radius: 8px; /* Gives all images slightly rounded corners */
   max-width: 100%; /* Ensures all images stay within the width of their container */
-  height: 340px; /* Sets the height of all images */
+  height: 450px; /* Sets the height of all images */
   display: block; /* Specifying "BLOCK" display to ensure images can be centered */
   margin-left: auto; /* IN combination with "margin-right", this centers all images */
   margin-right: auto;
@@ -76,8 +75,8 @@ img {
 /* <img> element hover efects */
 img:hover {
   filter: grayscale(5%); /* Brings back most of the <img>'s color when hovered over */
-  transition: transform 1s; /* Transform effect lasts 1 second */
-  transform: scale(1.1); /* <img> elements increase in size by x1.1 when hovered over */
+  transition: transform 3s; /* Transform effect lasts 1 second */
+  transform: scale(1.5); /* <img> elements increase in size by x1.1 when hovered over */
 }
 
 /* The @media rule is used in media queries to apply different styles for different media/ypes of devices */
@@ -104,8 +103,8 @@ footer {
   top: 0; /* Ensures no space is displayed above the NAVBAR */
   width: 100%; /* Makes the NAVBAR span the entire width of page */
   z-index: 1; /* Ensures other elements dont' display over the NAVBAR */
-  -webkit-animation: moveNav 2s; /* Applies the moveNav animation below for Safari 4.0 - 8.0 */
-  animation: moveNav 2s; /* Applies the moveNav amimation for all other browsers */
+  -webkit-animation: moveNav 3s; /* Applies the moveNav animation below for Safari 4.0 - 8.0 */
+  animation: moveNav 3s; /* Applies the moveNav amimation for all other browsers */
 }
 
 /* moveNav animation effect for moving the NAVBAR in from the left of the screen */
@@ -129,8 +128,8 @@ footer {
   font-size: 20px; /*Specifies font size of Navbar text */
   text-align: center; /* Centers the text within its container */
   position: relative; /* Sets the text relative to its normal positioning, allowing use of the animation below */
-  -webkit-animation: moveNavText 2.75s; /* Animation for Safari 4.0 - 8.0 */
-  animation: moveNavText 2.75s; /* Applies the moveNavText animation for 2.75s */
+  -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
+  animation: moveNavText 5.75s; /* Applies the moveNavText animation for 5.75s */
 }
 /* moveNavText animation effect for moving the Navbar text from above the view to the Navbar */
 @keyframes moveNavText {
@@ -206,11 +205,12 @@ footer {
 }
 
 .Column_1 {
+  overflow: hidden;
   float: left;
   width: 50%; /* Ensures the column takes up half of the page width */
   padding: 10px;
-  padding-top: 3%; /* Ensures there is space between the top of the column & our headings */
-  height: 700px; /* Sets the column's height */
+  padding-top: 1%; /* Ensures there is space between the top of the column & our headings */
+  height: 500px; /* Sets the column's height */
   background-color: #f2f2f2; /* Sets the background color of all columns with ".Column_1" */
 }
 
@@ -222,18 +222,19 @@ footer {
 }
 
 .Column_2 {
+  overflow: hidden;
   float: left;
   width: 50%;
   padding: 10px;
   padding-top: 1.9%;
-  height: 400px;
+  height: 500px;
   background-color: #4d4d4d;
 }
 
-/* This class is applied to the columns in the final row, overriding the height & padding to provide more room for the contact form while keeping the rest of the formatting from Column_1 or Column_2 */
+/* This class is applied to the columns in the final row, overriding the height & padding to provide more room for the Contact form while keeping the rest of the formatting from Column_1 or Column_2 */
 .Column_tall {
   padding-top: 3.5%;
-  height: 450px;
+  height: 530px;
 }
 
 /* Inserts something after the content of elements with ".Row" */
@@ -242,16 +243,31 @@ footer {
   display: table; /* Specifies the type of display behavior; the "table" value tells the browser to treat the element as a table */
   clear: both; /* Clears any other elements from floating on the left or the right of an element */
 }
+.GitHubText {
+  text-align: center;
+}
 /*****  END OF TABLE STYLING  *****/
 
 /*****  CONTACT FORM STYLING  *****/
-/*input[type="text"] targets all text input selectors of the contact form */
+.SocialMediaLinks {
+  text-align: center;
+  font-size: x-large;
+}
+#LinkedIn:hover {
+  transition: transform 1s;
+  transform: scale(1.1);
+}
+#Facebook:hover {
+  transition: transform 1s;
+  transform: scale(1.1);
+}
+/*input[type="text"] targets all text input selectors of the Contact form */
 input[type="text"] {
   width: 100%; /* Each input box covers the full width of the container */
   padding: 12px; /* Adds padding wihtin the text box */
   border: 1px solid #ccc; /* A solid border */
   border-radius: 6px; /* Slightly rounds the corners of the text box's border */
-  box-sizing: border-box; /* Creates a box with a border around the contact form's input boxes */
+  box-sizing: border-box; /* Creates a box with a border around the Contact form's input boxes */
   margin-top: 6px; /*Adds a margin to the top of the text box */
   margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
   resize: vertical; /* Allows users to resize text boxes vertically */
@@ -285,3 +301,13 @@ input[type="submit"]:hover {
   transform: scale(1.5); /* Makes the Submit button increase x1.5 in size */
   transition: transform 1.5s; /* Makes the trasnform effect last 1.5 seconds */
 }
+
+/* Form element */
+form {
+  border-radius: 5px; /* Rounds the Contact form's corners */
+  background-color: #f2f2f2;
+  padding: 10px; /* Adds padding to the Contact form */
+  font-family: "Trebuchet MS", Optima;
+  border: 2px solid lightgrey;
+}
+/*****  END OF CONTACT FORM STYLING *****/
