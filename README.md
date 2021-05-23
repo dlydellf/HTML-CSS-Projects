@@ -11,4 +11,4 @@ This repository will hold the HTML & CSS projects I've completed as I progress t
 An example of a fictional Space Travel Company's home page, styled with CSS and containing a navbar, image containers, and a contact form.
 
 ### Pool Academy Website
-An example of a fictious Pool Academy's home page, created with Bootstrap4 and containing several components, including a navbar, contact form, dropdowns, jumbotron, and several cards of varying layouts.
+An example of a fictitious Pool Academy's home page, created with Bootstrap4 and containing several components, including a navbar, contact form, dropdowns, jumbotron, and several cards of varying layouts.
