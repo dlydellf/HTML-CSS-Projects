@@ -21,3 +21,141 @@ input:nth-of-type(5) {
 input:nth-of-type(6) {
   width: 239px;
 }
+
+/* ==============================
+Beginning of Modal/Lightbox's CSS
+============================== */
+.row > .column {
+  padding: 0 50px; /* Spaces the icons on webpage */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create FOUR equal columns that float next to each other: */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  border: 1px solid yellow;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stays in place */
+  z-index: 1; /* Sits on top */
+  padding-top: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enables scrolling, if needed */
+  background-color: rgba(0, 0, 0, 0.85); /* Black, mostly transparent */
+}
+
+/* Modal Content */
+.modal-content {
+  border: 1px solid red;
+  position: relative;
+  background-color: black;
+  margin: 0px auto;
+  padding: 0;
+  width: 50%;
+  max-width: 1000px;
+}
+
+/* The Close button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default: */
+.mySlides {
+  display: none;
+  border: 5px solid green;
+}
+
+/* Next & Previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color & see-thru */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3, etc.) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.text {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 15px;
+  padding: 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+img.demo {
+  opacity: 0.6;
+  width: 75%;
+  padding: 0 100px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
