@@ -22,8 +22,10 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
+  console.log(`n = ${n}`); //```````````````````````````````````````````````````````
   var i;
   var slides = document.getElementsByClassName("mySlides"); // EVERY slide has a .mySlides (calls them all)
+  console.log(`slides.length = ${slides.length}`); //```````````````````````````````````````````
   var dots = document.getElementsByClassName("demo"); // EVERY MODAL's thumbnail has a .demo (calls them all)
   if (n > slides.length) {
     slideIndex = 1;
@@ -31,6 +33,7 @@ function showSlides(n) {
   if (n < 1) {
     slideIndex = slides.length;
   }
+  console.log(`slideIndex = ${slideIndex}`);
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -38,5 +41,6 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex - 1].style.display = "block";
+  console.log(`slides[slideIndex-1] = ${slides[slideIndex]}`);
   dots[slideIndex - 1].className += " active";
 }
