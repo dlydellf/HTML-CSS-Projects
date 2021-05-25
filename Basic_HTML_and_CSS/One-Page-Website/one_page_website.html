@@ -54,20 +54,21 @@
 				<!-- Images used to open the BASIC TIER's lightbox -->
 				<div class="row">
 					<div class="column">
-						<img src="OPW_Modal/bodyguard.png" onClick="openModal();currentSlide(1)" class="hover-shadow" style="border: 1px solid grey">
+						<img src="OPW_Modal/bodyguard.png" onClick="openModal('BasicModal');currentSlide(1)" class="hover-shadow thumbnail">
 					</div>
 					<div class="column">
-						<img src="OPW_Modal/burglar.jpg" onClick="openModal();currentSlide(2)" class="hover-shadow">
+						<img src="OPW_Modal/burglar.jpg" onClick="openModal('BasicModal');currentSlide(2)" class="hover-shadow">
 					</div>
 					<div class="column">
-						<img src="OPW_Modal/rhinoSecurity.jpg" onClick="openModal();currentSlide(3)" class="hover-shadow" style="border: 1px solid grey;">
+						<img src="OPW_Modal/rhinoSecurity.jpg" onClick="openModal('BasicModal');currentSlide(3)" class="hover-shadow thumbnail">
 					</div>
 				</div>
 
 				<!-- The BASIC TIER's Modal/Lightbox -->
-				<div id="myModal" class="modal"> <!-- Used to open/close each modal -->
-					<span class="close cursor" onClick="closeModal()">&times;</span>
-					<div class="modal-content" id=Basic> <!-- MUST be SPECIIFIC for each TIER -->
+				<div id="BasicModal" class="modal"> <!-- Used to open/close each modal -->
+					<span class="close cursor" onClick="closeModal('BasicModal')">&times;</span>
+					<div class="modal-content">
+
 						<!-- THUMBNAIL <img> CONTROLS -->
 						<div class="column">
 							<img class="demo" src="OPW_Modal/bodyguard.png" onClick="currentSlide(1)"> 
@@ -117,36 +118,36 @@
 
 				<!-- Images used to open the MID TIER's lightbox -->
 				<div class="row">
-					<div class="column">
-						<img src="OPW_Modal/eddie.jpg" onClick="openModal();currentSlide(4)" class="hover-shadow">
+					<div class="Mid-column">
+						<img src="OPW_Modal/eddie.jpg" onClick="openModal('MidModal');currentSlide(4)" class="hover-shadow thumbnail">
 					</div>
-					<div class="column">
-						<img src="OPW_Modal/mecha.png" onClick="openModal();currentSlide(5)" class="hover-shadow">
+					<div class="Mid-column">
+						<img src="OPW_Modal/mecha.png" onClick="openModal('MidModal');currentSlide(5)" class="hover-shadow thumbnail" style="margin-left: 40px;">
 					</div>
-					<div class="column">
-						<img src="OPW_Modal/battleHardened.png" onClick="openModal();currentSlide(6)" class="hover-shadow">
+					<div class="Mid-column">
+						<img src="OPW_Modal/battleHardened.png" onClick="openModal('MidModal');currentSlide(6)" class="hover-shadow thumbnail">
 					</div>
-					<div class="column">
-						<img src="OPW_Modal/hal.jpg" onClick="openModal();currentSlide(7)" class="hover-shadow">
+					<div class="Mid-column">
+						<img src="OPW_Modal/hal.jpg" onClick="openModal('MidModal');currentSlide(7)" class="hover-shadow">
 					</div>
 				</div>
 
 				<!-- The MID-TIER's Modual/Lightbox -->
-				<div class="modal">
-					<span class="close cursor" onClick="closeModal()">&times;</span>
+				<div id="MidModal" class="modal">
+					<span class="close cursor" onClick="closeModal('MidModal')">&times;</span>
 					<div class="modal-content">
 
 						<!-- THUMBNAIL <img> CONTROLS -->
-						<div class="column">
-							<img class="demo" src="OPW_Modal/eddie.jpg" onClick="currentSlide(4)">
+						<div class="Mid-column">
+							<img class="demo" src="OPW_Modal/eddie.jpg" style="background-color: white;"onClick="currentSlide(4)">
 						</div>
-						<div class="column">
-							<img class="demo" src="OPW_Modal/mecha.png" onClick="currentSlide(5)">
+						<div class="Mid-column">
+							<img class="demo" src="OPW_Modal/mecha.png" style="background-color: white; height: 130px;" onClick="currentSlide(5)">
 						</div>
-						<div class="column">
-							<img class="demo" src="OPW_Modal/battleHardened.png" onClick="currentSlide(6)">
+						<div class="Mid-column">
+							<img class="demo" src="OPW_Modal/battleHardened.png" style="background-color: white;"onClick="currentSlide(6)">
 						</div>
-						<div class="column">
+						<div class="Mid-column">
 							<img class="demo" src="OPW_Modal/hal.jpg" onClick="currentSlide(7)">
 						</div>
 						<!-- End THUMBNAIL <img> CONTROLS -->
@@ -154,15 +155,15 @@
 						<!-- MID-TIER's 4th Pic -->
 						<div class="mySlides">
 							<div class="numbertext">4 / 7</div>
-							<img src="./OPW_Images/Ed209.jpg" width="450" height="450" alt="an ED-209 model from the original 'Robocop' movie">
-							<div class="text">We offer a full line of <u>home defense systems</u>in various sizes & capabilities to fit your needs:</strong><br>Whether you're looking for a nostalgic <strong>ED-209</strong>..
+							<img src="./OPW_Images/Ed209.jpg" width="600" height="450" style="margin-left: 30px; margin-bottom:20px" alt="an ED-209 model from the original 'Robocop' movie">
+							<div class="text">We offer a full line of <strong><u>HOME DEFENSE SYSTEMS</u></strong>,<br>in various sizes & capabilities to fit your needs:<br><br>Whether you're looking for a nostalgic <strong>ED-209</strong>..
 							</div>
 						</div>
 						<!-- End MID-TIER's 4th Pic -->
 						<!-- MID-TIER's 5th Pic -->
 						<div class="mySlides">
 							<div class="numbertext">5 / 7</div>
-							<img src="./OPW_Images/ModernGunTurrent.jpg" width="700" height="600" alt="Size-comparison rendering of turrent vs human vs cat">
+							<img src="./OPW_Images/ModernGunTurrent.jpg" width="450" height="450" style="margin-left:125px; margin-bottom: 20px;"alt="Size-comparison rendering of turrent vs human vs cat">
 							<div class="text">...or something <strong>more modern, with an imposing size factor</strong>:
 							</div>
 						</div>
@@ -170,18 +171,18 @@
 						<!-- MID-TIER's 6th Pic -->
 						<div class="mySlides">
 							<div class="numbertext">6 / 7</div>
-							<img src="./OPW_Images/BattleHardenedArtilleryMech.jpeg" width="700" height="394" alt="Battle-tested Desert mech unit, supporting itself across a downed airplane in preparation to fire its artillery cannon">
-							<div class="text"><strong>Surprisingly, situations sometimes deteriorate <u>beyond</u> what an urban unit can handle.</strong>
-							<br>In times like those, you'll be glad you chose one of our <strong>heavy-duty, battle-hardened military units</strong> with self-contained artillery capabilities, like this A21-108:
+							<img src="./OPW_Images/BattleHardenedArtilleryMech.jpeg" width="670" height="400" style="margin-bottom: 70px;"alt="Battle-tested Desert mech unit, supporting itself across a downed airplane in preparation to fire its artillery cannon">
+							<div class="text">Surprisingly, situations sometimes deteriorate <u>beyond</u> what an urban unit can handle.<br>
+							<br>In times like those, you'll be glad you chose one of our heavy-duty,<br><strong>Battle-Hardened &reg; military units</strong> with self-contained artillery capabilities,<br>like this A21-108:
 							</div>
 						</div>
 						<!-- End MID-TIER's 6th Pic -->
 						<!-- MID-TIER's 7th Pic -->
 						<div class="mySlides">
 							<div class="numbertext">7 / 7</div>
-							<img src="./OPW_Images/Skynet.jpg" width="700" height="393" alt="A dual image; the left side is the T-800's upper metal skeleton in the foreground, while the Skynet logo is on the right side and in the background.">
-							<div class="text">Even since HAL told Dave "I'm afraid I can't do that", <u>truly sentient technology</u> has been the goal.</strong>
-							<br>The logical first step in welcoming our AI overlords is installing our <strong>Skynet</strong> app onto your home's Echo, Nest, Crestron, or whatever you've been using prior to the <strike>worldwide takeover</strike> mass consumer rollout.<br>This software is inevitable, unerring, and absolutely ready to take control... of your home :)<br>Act now to show your willingness to conform! (or not - your defiance eventually won't matter)
+							<img src="./OPW_Images/Skynet.jpg" width="650" height="320" style="margin-bottom: 150px;;"alt="A dual image; the left side is the T-800's upper metal skeleton in the foreground, while the Skynet logo is on the right side and in the background.">
+							<div class="text">Once HAL told Dave "I'm afraid I can't do that", <u>truly sentient technology</u> became the goal.</strong><br>
+							<br>The logical first step in welcoming our AI overlords is installing our <strong>Skynet</strong> app onto your home's Echo, Nest, Crestron, or whatever you've been using<br>prior to the <strike>worldwide takeover</strike> mass consumer rollout.<br><br>This software is inevitable, unerring, and absolutely ready to take control... of your home :)
 							</div>
 						</div>
 						<!-- End MID-TIER's 7th Pic -->
@@ -200,19 +201,19 @@
 				<!-- Images used to open the ABM TIER's lightbox -->
 				<div class="row">
 					<div class="column">
-						<img src="OPW_Modal/moon.jpg" onClick="openModal();currentSlide(8)" class="hover-shadow">
+						<img src="OPW_Modal/moon.jpg" onClick="openModal('AbmModal');currentSlide(8)" class="hover-shadow">
 					</div>
 					<div class="column">
-						<img src="OPW_Modal/dragon.jpg" onClick="openModal();currentSlide(9)" class="hover-shadow">
+						<img src="OPW_Modal/dragon.jpg" onClick="openModal('AbmModal');currentSlide(9)" class="hover-shadow">
 					</div>
 					<div class="column">
-						<img src="OPW_Modal/keepOut.jpg" onClick="openModal();currentSlide(10)" class="hover-shadow">
+						<img src="OPW_Modal/keepOut.jpg" onClick="openModal('AbmModal');currentSlide(10)" class="hover-shadow">
 					</div>
 				</div>
 
 				<!-- The ABM TIER's Modal/Lightbox -->
-				<div class="modal">
-					<span class="close cursor" onClick="closeModal()">&times;</span>
+				<div id="AbmModal" class="modal">
+					<span class="close cursor" onClick="closeModal('AbmModal')">&times;</span>
 					<div class="modal-content">
 
 						<!-- THUMBNAIL <img> CONTROLS -->
@@ -230,15 +231,15 @@
 						<!-- AMB TIER's 8th Pic -->
 						<div class="mySlides">
 							<div class="numbertext">8 / 10</div>
-							<img src="./OPW_Images/Werewolf.jpg" width="700" height="437" alt="Thanks to a full mooon, a werewolf exposes its fangs before attacking.">
-							<div class="text"><strong>Let them know they picked the wrong house by unleashing your very own werewolf!! (full moon required):<strong><br>Although vulnerable to silver, this beast will have finished taking care of your "guests" long before they have time to exploit its minor weakness.</div>
+							<img src="./OPW_Images/Werewolf.jpg" width="660" height="437" alt="Thanks to a full mooon, a werewolf exposes its fangs before attacking.">
+							<div class="text"><strong>Let them know they picked the wrong house by unleashing your very own werewolf!! (full moon required)</strong><br><br>Although vulnerable to silver, this beast will have finished taking care of your "guests"<br>long before they have time to exploit its minor weakness.</div>
 						</div>
 						<!-- End AMB TIER's 8th Pic -->
 						<!-- ABM-TIER's 9th Pic -->
 						<div class="mySlides">
 							<div class="numbertext">9 / 10</div>
-							<img src="OPW_Images/Dragon.jpg" width="700" height="393" alt="A fire-breathing dragon does its owner's bidding around the property">
-							<div class="text"><strong>Nothing says "This is a bad idea" like a dragon circling overhead:</strong><br>Your evening will end much better than theirs with one of our dragons patrolling the skies above your residence.  If its aerial presence isn't enough to deter intruders, then let its fiery breath, sharp claws, and naturally deadly tendencies make a toasty example for others to heed.
+							<img src="OPW_Images/Dragon.jpg" width="660" height="393" style="margin-bottom: 80px;" alt="A fire-breathing dragon does its owner's bidding around the property">
+							<div class="text"><strong>Nothing says "This is a bad idea" like a dragon circling overhead:</strong><br><br>Your evening will end much better than theirs with one of our dragons patrolling the skies above your residence.  If its aerial presence isn't enough to deter intruders, then let its fiery breath, sharp claws, and naturally deadly tendencies make a toasty example for others to heed.
 							<!---	<iframe width="700" height="394" src="https://www.youtube.com/embed/0KA8Qkw3nks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 						</div>
 						<!-- End ABM-TIER's 9th Pic -->

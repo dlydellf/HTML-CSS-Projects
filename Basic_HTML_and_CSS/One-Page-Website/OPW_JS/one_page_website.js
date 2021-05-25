@@ -1,11 +1,11 @@
 // Opens the modal:
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
+function openModal(tier) {
+  document.getElementById(tier).style.display = "block";
 }
 
 // Closes the modal:
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+function closeModal(tier) {
+  document.getElementById(tier).style.display = "none";
 }
 
 var slideIndex = 1;
@@ -22,12 +22,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  console.log(`n: ${n}`); // delete this
   var i;
   var slides = document.getElementsByClassName("mySlides"); // EVERY slide has a .mySlides (calls them all)
   var dots = document.getElementsByClassName("demo"); // EVERY MODAL's thumbnail has a .demo (calls them all)
-  console.log(`slides.length: ${slides.length}`); // delete this
-  console.log(`dots.length: ${dots.length}`);
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -40,7 +37,6 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  console.log(`slideIndex = ${slideIndex}`); // delete this
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
