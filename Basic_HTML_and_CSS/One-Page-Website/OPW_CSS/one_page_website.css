@@ -25,6 +25,10 @@ input:nth-of-type(6) {
 /* ==============================
 Beginning of Modal/Lightbox's CSS
 ============================== */
+:root {
+  --float: left;
+  --width: 25%;
+}
 .row > .column {
   padding: 0 50px; /* Spaces the icons on webpage */
 }
@@ -37,13 +41,16 @@ Beginning of Modal/Lightbox's CSS
 
 /* Create FOUR equal columns that float next to each other: */
 .column {
-  float: left;
-  width: 25%;
+  float: var(--float);
+  width: var(--width);
+}
+.Mid-column {
+  float: var(--float);
+  width: var(--width);
 }
 
 /* The Modal (background) */
 .modal {
-  border: 1px solid yellow;
   display: none; /* Hidden by default */
   position: fixed; /* Stays in place */
   z-index: 1; /* Sits on top */
@@ -58,7 +65,6 @@ Beginning of Modal/Lightbox's CSS
 
 /* Modal Content */
 .modal-content {
-  border: 1px solid red;
   position: relative;
   background-color: black;
   margin: 0px auto;
@@ -87,7 +93,6 @@ Beginning of Modal/Lightbox's CSS
 /* Hide the slides by default: */
 .mySlides {
   display: none;
-  border: 5px solid green;
 }
 
 /* Next & Previous buttons */
@@ -131,7 +136,7 @@ Beginning of Modal/Lightbox's CSS
 
 /* Caption text */
 .text {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-size: 15px;
   padding: 0px;
@@ -144,9 +149,11 @@ Beginning of Modal/Lightbox's CSS
 img.demo {
   opacity: 0.6;
   width: 75%;
-  padding: 0 100px;
+  margin: 0 100px;
 }
-
+.thumbnail {
+  border: 1px solid grey;
+}
 .active,
 .demo:hover {
   opacity: 1;
@@ -157,5 +164,5 @@ img.hover-shadow {
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 58px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
