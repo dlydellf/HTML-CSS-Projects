@@ -3,8 +3,10 @@ function bookmarkHue(NavbarClass) {
     hue = "green";
   } else if (NavbarClass == "Intermediate") {
     hue = "white";
-  } else hue = "red";
-  bookmark(NavbarClass, hue);
+  } else {
+    hue = "red";
+    bookmark(NavbarClass, hue);
+  }
 }
 
 function bookmark(NavbarClass, hue) {
