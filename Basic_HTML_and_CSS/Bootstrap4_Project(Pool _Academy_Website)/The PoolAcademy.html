@@ -25,12 +25,40 @@
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-warning">
         <!-- or bg-dark?? -->
         <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
               <a class="nav-link active" href="#about">About</a>
-              <a class="nav-link active" href="#classes">Classes</a>
-              <a class="nav-link active" href="#locations">Locations</a>
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link active dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Classes</a
+                  >
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#Classes">Beginner</a></li>
+                    <li><a class="dropdown-item" href="#Classes">Intermediate</a></li>
+                    <li><a class="dropdown-item" href="#Classes">Advanced</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link active dropdown-toggle"
+                    href="#locations"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Locations</a
+                  >
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#Portland">Portland</a></li>
+                    <li><a class="dropdown-item" href="#SLC">Salt Lake City</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -38,24 +66,6 @@
     </div>
 
     <!---------------------------"Locations" DROPDOWN-------------------------->
-    <div class="dropdown">
-      <a
-        class="btn btn-secondary dropdown-toggle"
-        href="#"
-        role="button"
-        id="dropdownMenuLink"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Dropdown link
-      </a>
-
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </div>
     <!------------------------END "Locations" Dropdown------------------------->
     <!--===========================  END NAV Bar ============================-->
 
@@ -135,7 +145,8 @@
         </div>
         <!--------------------------END Right Colum---------------------------->
       </div>
-      <br id="classes" /><br />
+      <br id="Classes" /><br />
+      <!----all 3 "Classes" bookmarks direct here---->
       <hr class="text-warning" />
     </div>
     <!--======================  END "About" Section  ========================-->
@@ -205,7 +216,8 @@
             </p>
           </div>
         </div>
-        <br id="locations" /><br />
+        <br id="Portland" /><br />
+        <!------for NavBar's Portland bookmark------>
         <hr class="text-warning" />
       </div>
       <!---------------------------END Row of Text----------------------------->
@@ -246,7 +258,8 @@
         </div>
       </div>
       <!-------------------------Portland Row ENDS----------------------------->
-      <br />
+      <br id="SLC" />
+      <!---------------for NavBar's SLC bookmark--------------->
       <br />
       <hr class="text=warning" />
       <br />
