@@ -7,8 +7,8 @@ function bookmarkHue(NavbarClass) {
     hue = "white";
   } else {
     hue = "red";
-    bookmark(NavbarClass, hue);
   }
+  bookmark(NavbarClass, hue);
 }
 
 function bookmark(NavbarClass, hue) {
