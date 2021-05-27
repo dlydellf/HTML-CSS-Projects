@@ -233,8 +233,29 @@
 
     <br />
     <hr class="text-warning" />
-    <br />
-    <br />
+    <!--=========================  "Signup Form"  ===========================-->
+    <div class="row">
+      <div class="container text-center col-md-6" id="details">
+        <div class="container text-center">
+          <h1 class="display-6 my-4 col-lg-auto text-warning">Stay current on our deals!</h1>
+          <div class="input-group mb-5 input-group-sm">
+            <input type="text" class="form-control" placeholder="Email" />
+            <span class="input-group-btn">
+              <button
+                type="button"
+                class="btn btn-warning popover-dismiss"
+                data-bs-container="body"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Submit your email to receive great savings on our classes!"
+              >
+                Signup here!
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
     <br />
     <br />
     <!--============================== Footer ===============================-->
@@ -243,11 +264,16 @@
     </div>
     <!--============================ Footer ENDS ============================-->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- FROM BOOTSTRAP "v5" (not the video's BS"v4"!!!!) Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var popover = new bootstrap.Popover(document.querySelector(".popover-dismiss"), {
+        trigger: "focus",
+      });
+    </script>
   </body>
 </html>
