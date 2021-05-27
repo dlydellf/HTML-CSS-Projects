@@ -42,23 +42,29 @@
     <br /><br />
     <div class="jumbotron jumbotron-fluid bg-warning">
       <div class="container">
-        <h1 class="display-5" id="about">The Pool Academy</h1>
+        <h1 class="display-5" id="about" data-bs-toggle="modal" data-bs-target="#modalRegisterForm">
+          <!-- Clicking this <h1> launches the "Register" modal (below) -->
+          The Pool Academy
+        </h1>
         <p class="lead">Sharper your skills | Enhance your enjoyment</p>
       </div>
     </div>
 
     <!--===================  "About" Section's Modal  =======================-->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Launch demo modal
-    </button>
-
-    <!----------------------------  Modal ------------------------------------->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalRegisterForm"
+      tabindex="-1"
+      aria-labelledby="modalRegisterFormLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="modalRegisterFormLabel">
+              Register to stay current with our<br />
+              pricing discounts & hosted events
+            </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">...</div>
