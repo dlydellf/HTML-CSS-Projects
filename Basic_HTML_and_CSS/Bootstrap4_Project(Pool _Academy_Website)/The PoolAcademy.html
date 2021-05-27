@@ -21,7 +21,7 @@
         alt="Two cue sticks and five pool balls atop a custom pool table"
       />
 
-      <!-----------------------------  NAV BAR  ------------------------------->
+      <!--===========================  Nav Bar  =============================-->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-warning">
         <!-- or bg-dark?? -->
         <div class="container-fluid">
@@ -37,7 +37,29 @@
       </nav>
     </div>
 
-    <!--====================  "About" Section (Jumbotron)  ==================-->
+    <!---------------------------"Locations" DROPDOWN-------------------------->
+    <div class="dropdown">
+      <a
+        class="btn btn-secondary dropdown-toggle"
+        href="#"
+        role="button"
+        id="dropdownMenuLink"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Dropdown link
+      </a>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <!------------------------END "Locations" Dropdown------------------------->
+    <!--===========================  END NAV Bar ============================-->
+
+    <!--====================  "About" Section (JUMBOTRON)  ==================-->
     <div id="about"></div>
     <br /><br />
     <div class="jumbotron jumbotron-fluid bg-warning">
@@ -50,7 +72,7 @@
       </div>
     </div>
 
-    <!--===================  "About" Section's Modal  =======================-->
+    <!-----------------------"About" Section's MODAL--------------------------->
     <div
       class="modal fade"
       id="modalRegisterForm"
@@ -76,7 +98,7 @@
         </div>
       </div>
     </div>
-    <!--==================== END "About" Section's Modal  ===================-->
+    <!-----------------------END "About" Section's Modal----------------------->
 
     <!----------------------"About" Section (ROW of Content)------------------->
     <br /><br /><br />
@@ -90,6 +112,7 @@
             alt="An incorrectly racked set of pool balls, as seen from opposite the breaker's perspective"
           />
         </div>
+        <!--------------------------END Left Column---------------------------->
         <!-------------------Right Column / the "Offerings" List--------------->
         <div class="col-sm">
           <ul class="list-group">
@@ -110,12 +133,12 @@
             </li>
           </ul>
         </div>
-        <!------------------------Right Column ENDS---------------------------->
+        <!--------------------------END Right Colum---------------------------->
       </div>
       <br id="classes" /><br />
       <hr class="text-warning" />
     </div>
-    <!--=====================  "About" Section ENDS  ========================-->
+    <!--======================  END "About" Section  ========================-->
     <br />
     <!--=======================  "Classes" Section  =========================-->
     <div class="container text-warning">
@@ -150,9 +173,9 @@
           </div>
         </div>
       </div>
-      <!------------------------Row of Images ENDS----------------------------->
+      <!---------------------------END Row of Images--------------------------->
       <br />
-      <!--------------------------Row of Text---------------------------------->
+      <!-----------------------------Row of Text------------------------------->
       <div class="container">
         <div class="row justify-content-evenly">
           <!--left col-->
@@ -185,11 +208,11 @@
         <br id="locations" /><br />
         <hr class="text-warning" />
       </div>
-      <!-------------------------Row of Text ENDS------------------------------>
+      <!---------------------------END Row of Text----------------------------->
     </div>
     <!--=====================  "Classes" Section ENDS  ======================-->
 
-    <!--=======================  "Location" Section =========================-->
+    <!--=======================  "Location" Section  ========================-->
     <div class="container text-warning text-center">
       <h1>Our Locations</h1>
       <br />
@@ -264,7 +287,7 @@
 
     <br />
     <hr class="text-warning" />
-    <!--=========================  "Signup Form"  ===========================-->
+    <!--=========================  "Signup" Form  ===========================-->
     <div class="row">
       <div class="container text-center col-md-6" id="details">
         <div class="container text-center">
@@ -289,13 +312,14 @@
     </div>
     <br />
     <br />
+    <!--=========================  END "Signup" Form  =======================-->
     <!--============================== Footer ===============================-->
     <div class="card-footer text-warning">
       <a class="text-warning" href="#home">www.ThePoolAcademy.arpa</a> &nbsp;|&nbsp; &copy; 2021
     </div>
     <!--============================ Footer ENDS ============================-->
 
-    <!-- FROM BOOTSTRAP "v5" (not the video's BS"v4"!!!!) Option 1: Bootstrap Bundle with Popper -->
+    <!----- From BSv5 (not the video's BSv4): Bootstrap Bundle w/ Popper ------>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
