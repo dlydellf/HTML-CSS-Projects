@@ -97,16 +97,40 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modalRegisterFormLabel">
-              Register to stay current with our<br />
-              pricing discounts & hosted events
+              Register for updated info on our<br />
+              pricing discounts & hosted events!
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">...</div>
-          <!--Text inside the modal-->
+          <div class="modal-body">
+            <form action="https://formspree.io/f/myylkrre" method="POST">
+              <!--  once finished, this is going on my profile; I'd like all features to be functional -->
+              <div class="mb-3">
+                <label for="FirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="FirstName" placeholder="Please enter your first name:" />
+              </div>
+              <div class="mb-3">
+                <label for="LastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="LastName" placeholder="Please enter your last name:" />
+              </div>
+              <div class="mb-3">
+                <label for="EmailAddress" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="EmailAddress"
+                  placeholder="We'll send you a confirmation email immediately"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="PhoneNumber" class="form-label">Phone Number (optional)</label>
+                <input type="telephone" class="form-control" id="PhoneNumber" placeholder="(xxx) xxx-xxxx" />
+              </div>
+            </form>
+          </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-warning btn-lg">Submit</button>
+            <button type="button" class="btn btn-dark btn-sm" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
