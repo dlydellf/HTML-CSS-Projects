@@ -39,7 +39,7 @@
                     >Classes</a
                   >
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#Classes">Beginner</a></li>
+                    <li><a class="dropdown-item" href="#Classes" onClick="beginner()">Beginner</a></li>
                     <li><a class="dropdown-item" href="#Classes">Intermediate</a></li>
                     <li><a class="dropdown-item" href="#Classes">Advanced</a></li>
                   </ul>
@@ -159,7 +159,7 @@
       <div class="container">
         <div class="row justify-content-evenly align-items-end">
           <!--left col-->
-          <div class="col">
+          <div class="col" id="beginnerImage">
             <img
               class="image-fluid"
               src="./Bootstrap4_Images/Beginners.jpg"
@@ -190,7 +190,7 @@
       <div class="container">
         <div class="row justify-content-evenly">
           <!--left col-->
-          <div class="col text-success">
+          <div class="col text-success" id="beginnerText">
             <h3 class="text-start">Beginner</h3>
             <p>
               <u>Introduction to The Fundamentals</u>:<br />
@@ -342,6 +342,12 @@
       var popover = new bootstrap.Popover(document.querySelector(".popover-dismiss"), {
         trigger: "focus",
       });
+
+      function beginner() {
+        document.getElementById("beginnerImage").style.boxShadow = "1px 1px 15px 10px green";
+        document.getElementById("beginnerImage").style.backgroundColor = "green";
+        document.getElementById("beginnerText").style.border = "1px solid green";
+      }
     </script>
   </body>
 </html>
