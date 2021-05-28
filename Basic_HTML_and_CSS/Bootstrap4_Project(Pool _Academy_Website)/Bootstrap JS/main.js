@@ -18,3 +18,4 @@ function bookmark(NavbarClass, hue) {
 }
 /* Once the above works, another function will be needed that disables/toggles off the styling on whichever two classes weren't selected */
 /* And all of this must become @media-responsive, eventually */
+/*  For above, combinne row of text w/row of images into cards, then fix loayout :)*/
