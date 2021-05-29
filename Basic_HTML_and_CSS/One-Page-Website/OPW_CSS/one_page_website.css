@@ -1,7 +1,13 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  opacity: 1;
+  transition: 3s opacity;
 }
 
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
 .rsvp {
   width: 300px;
   margin-bottom: 2px;
