@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./PW-css/stylesheet.css">
+    <script src="./PW-js/main.js"></script>
     <title>D. Foreman's Portfolio</title>
   </head>
 
@@ -113,13 +114,13 @@
           <br>
           <br>
         <!--This specifies where and how to send the form data-->
-        <form action="https://formspree.io/f/myylkrre" method="POST">
+        <form name="contactForm" action="https://formspree.io/f/myylkrre" onSubmit="validateForm()" method="POST">
           <label>Name:</label>
             <input type="text" placeholder="Please enter your name here:">
           <label>Email:</label>
             <input type="email" id="Email" placeholder="Please enter your preferred email here:">
           <label>Message:</label>
-            <input type="text" id="Message" name="Message" placeholder="Please include your message here:">
+            <input type="text" id="Message" name="Message" placeholder="Please include a message here:">
             <input type="submit" value="SUBMIT">
         </form>
       </div>
