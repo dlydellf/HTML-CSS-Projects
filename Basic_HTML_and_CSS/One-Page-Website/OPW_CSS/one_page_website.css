@@ -1,6 +1,5 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
 }
 
 .rsvp {
@@ -165,4 +164,20 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 8px 58px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*========================================
+Responsive Styling
+========================================*/
+#link {
+  font-size: 2vw;
+}
+h2 {
+  font-size: 3vw;
+}
+p {
+  font-size: 2vw;
+}
+.text {
+  font-size: 1vw;
 }
