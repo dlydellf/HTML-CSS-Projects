@@ -262,8 +262,8 @@ and down into the NAVBAR */
   transition: transform 1s;
   transform: scale(1.1);
 }
-/* "input[type='text']" targets all text input selectors of the Contact form */
-input[type="text"] {
+/* "input[placeholder]" targets all text input selectors of the Contact form */
+input[placeholder] {
   width: 100%; /* Input boxes cover the container's full width */
   padding: 12px; /* Adds padding wihtin the text box */
   border: 1px solid #ccc; /* A solid border */
@@ -276,7 +276,7 @@ input[type="text"] {
 }
 
 /* Input boxes' hover effects */
-input[type="text"]:hover {
+input[placeholder]:hover {
   box-shadow: 0 0 5px #00004d inset; /* Creates a blue shadow in hovered-over text boxes */
 }
 
