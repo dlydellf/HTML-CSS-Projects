@@ -12,10 +12,13 @@ function bookmarkHue(NavbarClass) {
 }
 
 function bookmark(NavbarClass, hue) {
-  document.div.getElementsByClassName("col").style.boxShadow = "none";
-  document.div.getElementsByClassName("col").style.background = "none";
+  document.getElementById("BeginnerImage").style.boxShadow = "none";
+  document.getElementById("AdvancedImage").style.boxShadow = "none";
+  document.getElementById("IntermediateImage").style.boxShadow = "none";
+  document.getElementById("BeginnerImage").style.background = "none";
+  document.getElementById("AdvancedImage").style.background = "none";
+  document.getElementById("IntermediateImage").style.background = "none"; // These six lines above toggle off the styling of whichever 2 classes weren't selected */
   document.getElementById(`${NavbarClass}Image`).style.boxShadow = `1px 1px 15px 10px ${hue}`;
   document.getElementById(`${NavbarClass}Image`).style.backgroundColor = `${hue}`;
 }
-/* Once the above works, another function will be needed that disables/toggles off the styling on whichever two classes weren't selected */
 /* And all of this must become @media-responsive, eventually */
