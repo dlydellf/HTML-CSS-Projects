@@ -1,0 +1,26 @@
+#img {
+  position: relative; /* Without this, "position: absolute" & <img> is immovable */
+  animation: movingImg 7s;
+}
+
+@keyframes movingImg {
+  0% {
+    /* Begins offfscreen, right side */
+    left: 100%;
+    opacity: 60%;
+  }
+  6% {
+    /* Quickly slides left across screen, disappearing; seen only as a blurry square*/
+    left: -40%;
+    opacity: 0%;
+  }
+  50% {
+    /* Brief delay, then slides right to centerscreen; opacity barely increases */
+    left: 32%;
+    opacity: 17%;
+  }
+  100% {
+    /* Gradual return to "position: absolute"; opacity steadily reaches 100% */
+    left: 0%;
+  }
+}
