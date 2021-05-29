@@ -114,11 +114,11 @@
           <br>
           <br>
         <!--This specifies where and how to send the form data-->
-        <form name="contactForm" action="https://formspree.io/f/myylkrre" onSubmit="validateForm()" method="POST">
+        <form name="contactForm" action="https://formspree.io/f/myylkrre" onsubmit="validateForm()" method="POST">
           <label>Name:</label>
-            <input type="text" placeholder="Please enter your name here:">
+            <input type="text" name="Name"placeholder="Please enter your name here:">
           <label>Email:</label>
-            <input type="email" id="Email" placeholder="Please enter your preferred email here:">
+            <input type="email" id="Email" name="Email" placeholder="Please enter your preferred email here:">
           <label>Message:</label>
             <input type="text" id="Message" name="Message" placeholder="Please include a message here:">
             <input type="submit" value="SUBMIT">
