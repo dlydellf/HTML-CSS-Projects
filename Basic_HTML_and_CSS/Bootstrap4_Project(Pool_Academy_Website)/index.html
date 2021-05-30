@@ -13,6 +13,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <!-- END Bootstrap's CSS -->
     <title>The Pool Academy</title>
   </head>
   <body class="bg-dark">
@@ -32,6 +33,7 @@
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
               <a class="nav-link active" href="#about">About</a>
               <ul class="navbar-nav">
+                <!-------------------"Classes" Dropdown------------------------>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link active dropdown-toggle"
@@ -48,6 +50,8 @@
                     <li><a class="dropdown-item" href="#Classes" onClick="bookmarkHue('Advanced')">Advanced</a></li>
                   </ul>
                 </li>
+                <!------------------END "Classes" Dropdown--------------------->
+                <!-------------------"Locations" Dropdown---------------------->
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link active dropdown-toggle"
@@ -62,15 +66,13 @@
                     <li><a class="dropdown-item" href="#SLC">Salt Lake City</a></li>
                   </ul>
                 </li>
+                <!----------------END "Locations" Dropdown--------------------->
               </ul>
             </div>
           </div>
         </div>
       </nav>
-    </div>
-
-    <!---------------------------"Locations" DROPDOWN-------------------------->
-    <!------------------------END "Locations" Dropdown------------------------->
+    </div>    
     <!--===========================  END NAV Bar ============================-->
 
     <!--====================  "About" Section (JUMBOTRON)  ==================-->
@@ -79,14 +81,14 @@
     <div class="jumbotron jumbotron-fluid bg-warning">
       <div class="container">
         <h1 class="display-5" id="about" data-bs-toggle="modal" data-bs-target="#modalRegisterForm">
-          <!-- Clicking this <h1> launches the "Register" modal (below) -->
+          <!---- Clicking this <h1> launches the "Register" modal (below) ----->
           The Pool Academy
         </h1>
         <p class="lead">Sharper your skills | Enhance your enjoyment</p>
       </div>
     </div>
-
-    <!-----------------------"About" Section's MODAL--------------------------->
+    <!--=================  END "About" Section's Jumbotron  =================-->
+    <!--=====================  "About" Section (MODAL)  =====================-->
     <div
       class="modal fade"
       id="modalRegisterForm"
@@ -105,7 +107,7 @@
           </div>
           <div class="modal-body">
             <form action="https://formspree.io/f/myylkrre" method="POST">
-              <!--  once finished, this is going on my profile; I'd like all features to be functional -->
+              <!--once finished, adding to my profile; all features must work-->
               <div class="mb-3">
                 <label for="FirstName" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="FirstName" placeholder="Please enter your first name:" />
@@ -136,9 +138,9 @@
         </div>
       </div>
     </div>
-    <!-----------------------END "About" Section's Modal----------------------->
+    <!--===================  END "About" Section's Modal  ===================-->
 
-    <!----------------------"About" Section (ROW of Content)------------------->
+    <!--================  "About" Section (ROW of Content)  =================-->
     <br /><br /><br />
     <div class="container">
       <div class="row">
@@ -177,7 +179,7 @@
       <br id="Classes" /><br /><!--Bookmarks for all 3 "Classes" direct here--->
       <hr class="text-warning" />
     </div>
-    <!--======================  END "About" Section  ========================-->
+    <!--===============  END "About" Section's Row of Content  ==============-->
     <br />
     <!--=======================  "Classes" Section  =========================-->
     <div class="container text-warning">
@@ -257,9 +259,8 @@
         <!------for NavBar's Portland bookmark------>
         <hr class="text-warning" />
       </div>
-      <!---------------------------END Row of Text----------------------------->
     </div>
-    <!--=====================  "Classes" Section ENDS  ======================-->
+    <!--=====================  END "Classes" Section ========================-->
 
     <!--=======================  "Location" Section  ========================-->
     <div class="container text-warning text-center">
@@ -294,9 +295,8 @@
           </p>
         </div>
       </div>
-      <!-------------------------Portland Row ENDS----------------------------->
-      <br id="SLC" />
-      <!---------------for NavBar's SLC bookmark--------------->
+      <!---------------------------END Portland Row---------------------------->
+      <br id="SLC" /><!--for NavBar's SLC bookmark-->
       <br />
       <hr class="text=warning" />
       <br />
@@ -331,9 +331,9 @@
           />
         </div>
       </div>
-      <!----------------------------SLC Row ENDS------------------------------->
+      <!----------------------------END SLC Row-------------------------------->
     </div>
-    <!--====================  "Location" Section ENDS  ======================-->
+    <!--======================  END "Location" Section ======================-->
 
     <br />
     <hr class="text-warning" />
@@ -367,7 +367,7 @@
     <div class="card-footer text-warning">
       <a class="text-warning" href="#home">www.ThePoolAcademy.arpa</a> &nbsp;|&nbsp; &copy; 2021
     </div>
-    <!--============================ Footer ENDS ============================-->
+    <!--============================ END Footer =============================-->
 
     <!----- From BSv5 (not the video's BSv4): Bootstrap Bundle w/ Popper ------>
     <script
