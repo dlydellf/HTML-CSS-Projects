@@ -9,3 +9,7 @@
 #openingImage {
   animation: zoomInOut 10s forwards;
 }
+
+html {
+  scroll-behavior: smooth;
+}
