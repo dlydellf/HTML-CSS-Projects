@@ -7,5 +7,5 @@
   }
 }
 #openingImage {
-  animation: zoomInOut 10s;
+  animation: zoomInOut 10s forwards;
 }
