@@ -10,5 +10,5 @@
   }
 }
 .image-fluid {
-  animation: zoomInOut 10s forwards;
+  animation: zoomInOut 10s;
 }
