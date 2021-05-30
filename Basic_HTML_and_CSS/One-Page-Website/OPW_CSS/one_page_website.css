@@ -8,6 +8,12 @@ body.fade-out {
   opacity: 0;
   transition: none;
 }
+#stickyNavBar {
+  border-bottom: 2px solid darkgrey;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
 .rsvp {
   width: 300px;
   margin-bottom: 2px;
