@@ -2,8 +2,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   opacity: 1;
   transition: 3s opacity;
+  background-color: rgba(153, 153, 153, 0.349);
 }
-
+#Basic {
+  background-color: rgba(153, 153, 153, 0.349);
+}
+#Mid {
+  background-color: #999;
+}
+#ABM {
+  background-color: rgb(13, 14, 31);
+  color: rgb(209, 39, 39);
+}
 body.fade-out {
   opacity: 0;
   transition: none;
