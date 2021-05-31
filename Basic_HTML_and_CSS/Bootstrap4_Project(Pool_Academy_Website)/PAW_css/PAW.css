@@ -1,0 +1,15 @@
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
+#openingImage {
+  animation: zoomInOut 10s forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,8 +1,36 @@
+:root {
+  --padding: 10px;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
+  opacity: 1;
+  transition: 3s opacity;
+  background-color: rgba(153, 153, 153, 0.349);
 }
-
+#Basic {
+  background-color: rgba(153, 153, 153, 0.349);
+  padding: var(--padding);
+}
+#Mid {
+  background-color: #999;
+  padding: var(--padding);
+}
+#ABM {
+  background-color: rgb(13, 14, 31);
+  color: rgb(209, 39, 39);
+  padding: var(--padding);
+}
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+#stickyNavBar {
+  border-bottom: 1px solid darkgrey;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
 .rsvp {
   width: 300px;
   margin-bottom: 2px;
@@ -165,4 +193,20 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 8px 58px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*========================================
+Responsive Styling
+========================================*/
+#link {
+  font-size: 2vw;
+}
+h2 {
+  font-size: 2vw;
+}
+p {
+  font-size: 1vw;
+}
+.text {
+  font-size: 1vw;
 }

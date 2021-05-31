@@ -7,16 +7,19 @@
 		<script src="OPW_JS/one_page_website.js" defer></script>
 	</head>
 	<body>
+		<script>
+			document.body.classList.add("fade-out");
+			window.addEventListener("DOMContentLoaded", () => {
+				document.body.classList.remove("fade-out");
+			});
+		</script>
 		<!-- NAV -->
-		<div>
-			<ul>
+		<div id="stickyNavBar">
 				<a href="#home" id="link">Home</a> &nbsp;|
 				<a href="#products" id="link">Product Tiers</a> &nbsp;|
-				<a href="#contact" id="link">Contact Us</a>
-			</ul>
+				<a href="#contact" id="link">Contact Us</a>			
 		</div>
 		<!-- END NAV-->
-		<hr>
 		<!-- HOME -->
 		<div id="home">
 			<div>
@@ -28,7 +31,7 @@
 							</header>
 								<p>The inadequacy of today's home security systems fall within two realms: traditionally monitored sensors (think ADT or Brinks), or the DIY variety (Ring, Abode, Link Interactive - connected sensors & cameras with real-time streaming to an app on your phone).  &nbsp;While a camera-connected doorbell or a lock openable with your phone might be the norm, these offer only a false sense of security, easily bypassable through online methods.<br><br>And once that happens, what <em><u>really</u></em> stands between your family's safety and those threating it?</p>
 						</section>
-					<br>
+					<hr>
 						<section id="whyUs">
 							<header>
 								<h2>The Difference of a Stout System</h2>
@@ -47,9 +50,9 @@
 				<h2>Our Tiers of Protection</h2>
 			</header>
 			<p>We offer three product tiers, based on your desired level of protection. &nbspHigher tiers offer all the protective benefits of lower tiers, repackaged into more visually compelling "crime deterrents". <br>Make no mistake, you and your family will enjoy unmatched peace-of-mind once the threats your friends & neighbors worry about cease being a source of concern for you.</p>
-			<div>
+			<div id="Basic">
 				<h3>I. Our Basic Tier</h3>
-				<p>Designed for those wanting security options that aren't dependent on a cellular signal, wifi range, or that are prone to hacking.<br>Each option is fully-automated, offers heightened protection from threats, and requires no complicated instruction manuals.<br>Click each of the <strong>icons</strong> below to see how they're ready to go, right out of the cage!</p>
+				<p>&#10139; Designed for those wanting security options that aren't dependent on a cellular signal, wifi range, or that are prone to hacking.<br>&#10139; Each option is fully-automated, offers heightened protection from threats, and requires no complicated instruction manuals.<br><br>Click the <strong>icons</strong> below for more information - our Basic options are ready to go, right out of the cage!</p><br>
 
 				<!-- Images used to open the BASIC TIER's lightbox -->
 				<div class="row">
@@ -112,9 +115,9 @@
 				</div>
 				<hr>
 			</div>
-			<div>
+			<div id="Mid">
 				<h3>II. Our Mid-Tier</h3>
-				<p>For those wishing not to <em>replace</em> their smart home tech, but to upgrade its functionality & effectiveness, we recommend our mid-tier offerings - a blend of superior, military-grade technological advances, specifically adapted to protecting the life & property of homeowners (or renters).</p>
+				<p>For those wishing not to <em>replace</em> their smart home tech, but to upgrade its functionality & effectiveness, we recommend our Mid-Tier offerings:<br><br>&#10139; A blend of <u>superior, military-grade technological advances</u>, specifically adapted to protecting the life & property of homeowners (or renters).</p><br>
 
 				<!-- Images used to open the MID TIER's lightbox -->
 				<div class="row">
@@ -193,10 +196,10 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div id="ABM">
 				<h3>III. Our "A Bit Much?" Tier</h3>
-				<p>Yes, exactly! Why settle for common Earthly animals or outdated sci-fi tech from the past, when what you <em>REALLY</em> deserve is a security system that pulls double-duty as a status symbol!
-				<br>Just like your gated driveway, the mere <em>presence</em> of these otherworldly options will signal your wealth to the local ne'er-do-wells, enticing them with promises of vast riches ripe for the taking once they're past the security system.<br>But alas, there'll be no disabling these systems, nor will there be any identifiable remains to prosecute - just an eliminated threat, with no unpleasant cleanup required!</p>
+				<p>Yes, exactly! Why settle for common Earthly animals or outdated sci-fi tech from the past, when what you <em>REALLY</em> deserve is a security system that pulls double-duty as a status symbol!<br>
+				<br>&#10139; Just like your gated driveway, the mere <em>presence</em> of these otherworldly options will signal your wealth to the local ne'er-do-wells;<br>&#10139; They'll be enticed with promises of vast riches, ripe for the taking once past your security system...<br><br>But alas, there will be no disabling these systems, nor will there be any identifiable remains to prosecute - just another thoroughly eliminated threat.</p><br>
 
 				<!-- Images used to open the ABM TIER's lightbox -->
 				<div class="row">
@@ -317,7 +320,7 @@
 		<br><br>
 		<!-- FOOTER -->
 		<div>
-			www.stoutsecurity.com &nbsp;|&nbsp; &copy; 2021
+			<a href="#home">www.stoutsecurity.com</a> &nbsp;|&nbsp; &copy; 2021
 		</div>
 		<!-- END FOOTER -->
 	</body>
