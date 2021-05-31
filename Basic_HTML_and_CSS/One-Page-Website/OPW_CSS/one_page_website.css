@@ -1,3 +1,6 @@
+:root {
+  --padding: 10px;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   opacity: 1;
@@ -6,23 +9,27 @@ body {
 }
 #Basic {
   background-color: rgba(153, 153, 153, 0.349);
+  padding: var(--padding);
 }
 #Mid {
   background-color: #999;
+  padding: var(--padding);
 }
 #ABM {
   background-color: rgb(13, 14, 31);
   color: rgb(209, 39, 39);
+  padding: var(--padding);
 }
 body.fade-out {
   opacity: 0;
   transition: none;
 }
 #stickyNavBar {
-  border-bottom: 2px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
   background-color: white;
   position: sticky;
   top: 0;
+  padding: 10px;
 }
 .rsvp {
   width: 300px;
