@@ -4,9 +4,9 @@ A new repo to store my Tech Academy coding projects.
 This repository will hold the HTML & CSS projects I've completed as I progress through The Tech Academy's curriculum, beginning from their "HTML & CSS Course" onward.
 
 ## Projects:
-[x] Space Station Website
-[x] Bootstrap Website ("The Pool Academy")
-[x] One-Page Website
+- [x] Space Station Website
+- [x] Bootstrap Website ("The Pool Academy")
+- [x] One-Page Website
 
 ### Space Station Website:
 An example of a fictional Space Travel Company's home page, styled with CSS and containing a navbar, image containers, and a contact form.
