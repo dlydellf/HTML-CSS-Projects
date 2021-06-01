@@ -1,0 +1,14 @@
+/* from Step 171 */
+
+p.lorem {
+	color: darkred;
+	text-align: left;
+}
+#ToAlign {
+	color: green;
+	text-align: center;
+}
+p {
+	color: blue;
+	text-align: right;
+}
