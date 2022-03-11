@@ -2,9 +2,9 @@
 This repo stores the HTML & CSS projects I've completed as I progressed through The Tech Academy's curriculum
 
 ## Projects:
-- [x] Bootstrap Website ("The Pool Academy")
-- [x] One-Page Website
-- [x] Space Station Website
+- [x] [Bootstrap Website](Basic_HTML_and_CSS/Bootstrap4_Project(Pool_Academy_Website)) ("The Pool Academy")
+- [x] [One-Page Website](Basic_HTML_and_CSS/One-Page-Website)
+- [x] [Space Station Website](Basic_HTML_and_CSS/Space_Station_Website)
 
 
 ### Bootstrap Website ("The Pool Academy"):
